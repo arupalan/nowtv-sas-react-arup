@@ -62,4 +62,4 @@ Feel free to create new files to help you complete these tasks. Please ask befor
 
 Please submit your ideas or criticism by submitting issues [here](https://github.com/arupalan/nowtv-sas-react-arup/issues)
 
-![Frontpage](https://github.com/arupalan/nowtv-sas-react-arup/blob/master/static/VirtualizedFrameRate.gif)
+![Frontpage](https://github.com/arupalan/nowtv-sas-react-arup/blob/master/static/VirtulizedFrameRate.gif)
