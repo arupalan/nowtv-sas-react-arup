@@ -15,7 +15,7 @@ export default class About extends React.Component {
       })
       .then(text => {
         this.setState({
-          markdown: text
+          markdown: text,
         });
       });
   }
