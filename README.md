@@ -54,7 +54,7 @@ Feel free to create new files to help you complete these tasks. Please ask befor
 - The second challenge is how we design the components that leverages optimal JS that maximises Frames Per Second. The evidence below is what I have snapshoted by throttling the CPU 6x and throttling Network to Fast 3G. If you notice when I scroll up/down the list we get consistent 30 FPS. I acheived this using
   the central idea as below including not to forget testability
 
-> \*\* \* HOC , Memo , Pure Component , virtualized viewport render to achieve near 60FPS , async-await with large number of records
+> \_ HOC , Memo , Pure Component , virtualized viewport render to achieve near 60FPS , async-await with large number of records
 >
 > - Jest-enzyme for testing
 > - Cypress installed but not yet started
