@@ -1,6 +1,7 @@
 import React from 'react';
 import { List } from 'react-virtualized';
-import { chat, device } from './message-list.module.scss';
+import s from './message-list.module.scss';
+import cx from 'classnames';
 
 import MemoMessageRenderer from '../MemoMessageRenderer/MemoMessageRenderer';
 import getChatLog from '../../services/service';
@@ -22,8 +23,8 @@ class MessageList extends React.Component {
 
   render() {
     return (
-      <div className={device}>
-        <div className={chat}>
+      <div className={s.device}>
+        <div className={s.chat}>
           <List
             width={rowWidth}
             height={listHeight}
@@ -33,11 +34,34 @@ class MessageList extends React.Component {
             overscanRowCount={3}
           />
         </div>
+        <div className={s.popupMessagesFooter}>
+          <textarea
+            id="status_message"
+            placeholder="Type a message..."
+            rows="10"
+            cols="40"
+            name="message"
+          />
+          <div className={s.btnFooter}>
+            <button className={s.bgNone}>
+              <i className="glyphicon glyphicon-film" />{' '}
+            </button>
+            <button className={s.bgNone}>
+              <i className="glyphicon glyphicon-camera" />{' '}
+            </button>
+            <button className={s.bgNone}>
+              <i className="glyphicon glyphicon-paperclip" />{' '}
+            </button>
+            <button className={cx(s.bgNone, s.pullRight)}>
+              <i className="glyphicon glyphicon-thumbs-up" />{' '}
+            </button>
+          </div>
+        </div>
       </div>
     );
   }
 
-  renderRow =({ index, key, style }) => {
+  renderRow = ({ index, key, style }) => {
     return (
       <MemoMessageRenderer
         key={key}
@@ -49,7 +73,7 @@ class MessageList extends React.Component {
         message={this.state.chats[index].message}
       />
     );
-  }
+  };
 }
 
 export default MessageList;
