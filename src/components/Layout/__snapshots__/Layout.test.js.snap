@@ -122,6 +122,64 @@ exports[`Layout renders children correctly 1`] = `
           tabIndex={0}
         />
       </div>
+      <section
+        id="new-message"
+      >
+        <div
+          className="popupMessagesFooter"
+        >
+          <textarea
+            cols="40"
+            id="status_message"
+            name="message"
+            onKeyPress={[Function]}
+            placeholder="Type a message..."
+            rows="10"
+          />
+          <div
+            className="btnFooter"
+          >
+            <button
+              className="bgNone"
+            >
+              <i
+                className="glyphicon glyphicon-film"
+              />
+               
+            </button>
+             
+            <button
+              className="bgNone"
+            >
+              <i
+                className="glyphicon glyphicon-camera"
+              />
+               
+            </button>
+             
+            <button
+              className="bgNone"
+            >
+              <i
+                className="glyphicon glyphicon-paperclip"
+              />
+               
+            </button>
+             
+            <button
+              className="bgNone pullRight"
+            >
+              <i
+                className="glyphicon glyphicon-thumbs-up"
+              />
+               
+            </button>
+             
+          </div>
+           
+        </div>
+         
+      </section>
     </div>
   </div>
   <div

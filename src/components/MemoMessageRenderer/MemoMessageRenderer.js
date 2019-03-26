@@ -2,6 +2,7 @@ import React, { memo } from 'react';
 import Moment from 'moment';
 import cx from 'classnames';
 import s from './MemoMessageRenderer.module.scss';
+import PropTypes from 'prop-types';
 
 function MemoMessageRenderer({
   key,
