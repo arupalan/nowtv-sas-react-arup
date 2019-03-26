@@ -1,8 +1,8 @@
 # React Feat (HOC , Render Props, Pure Component, Virtualized ViewPort render to achieve 60 FPS)
 
-> - HOC , Render Props Memo , Pure Component , virtualized viewport render to achieve near 60FPS , async-await with large number of records
+> - HOC , Render Props Memo , Pure Component , virtualized viewport render to achieve near 60FPS , async-await with large number of records (tested by throttling CPU 6x and Fast 3G Network)
 > - Jest-enzyme for testing
-> - Cypress installed but not yet started
+> - Cypress
 > - Coverage
 > - Redux, Saga , Generator Functions, Hooks upcoming 🌾
 
@@ -43,6 +43,6 @@
 
 - Finally, what did you think about the solution? 😀
 
-Please submit your ideas or criticism by submitting issues [here](https://github.com/arupalan/react-simplepp-arup/issues)
+Please submit your ideas or criticism by submitting issues [here](https://github.com/arupalan/react-simpleapp-arup/issues)
 
 ![Frontpage](https://github.com/arupalan/react-simpleapp-arup/blob/master/static/VirtulizedFrameRate.gif)
