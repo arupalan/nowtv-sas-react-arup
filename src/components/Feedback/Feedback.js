@@ -8,14 +8,14 @@ class Feedback extends React.Component {
         <div className={s.container}>
           <a
             className={s.link}
-            href="https://github.com/arupalan/nowtv-sas-react-arup"
+            href="https://github.com/arupalan/react-simpleapp-arup"
           >
             Ask a question
           </a>
           <span className={s.spacer}>|</span>
           <a
             className={s.link}
-            href="https://github.com/arupalan/nowtv-sas-react-arup/issues/new"
+            href="https://github.com/arupalan/react-simpleapp-arup/issues/new"
           >
             Report an issue
           </a>

@@ -6,10 +6,19 @@ import NotFound from './components/NotFound/NotFound';
 import MessageList from './components/MessageList/MessageList';
 import { Router } from '@reach/router';
 import About from './components/About/About';
+import { Helmet } from 'react-helmet';
 
 function App() {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Simple App Arup</title>
+        <link
+          rel="canonical"
+          href="https://github.com/arupalan/react-simpleapp-arup"
+        />
+      </Helmet>
       <Header />
       <Router>
         <MessageList path="/" />

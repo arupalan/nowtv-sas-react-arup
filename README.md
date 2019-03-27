@@ -10,7 +10,7 @@
 
 - **yarn start**: Runs the web application in developer mode
 - **yarn test**: Executes Jest Enzyme tests that have the `.test.js`
-- **yarn cy**: Starts cypress e2e
+- **yarn e2e**: Starts cypress e2e
 
 ## Data Structure
 
