@@ -13,7 +13,12 @@ function MemoMessageRenderer({
   message,
 }) {
   return (
-    <div key={key} style={style} className={s.messagerow}>
+    <div
+      key={key}
+      style={style}
+      className={s.messagerow}
+      data-cy="message__container"
+    >
       <div className={s.content}>
         <div className={s.chatboxsingleline}>
           <abbr className={s.timestamp}>{Moment(chattime).format('LL')}</abbr>
@@ -40,7 +45,12 @@ function MemoMessageRenderer({
           </div>
           <div className={cx(s.directchatinfo, s.clearfix)}>
             <span className={cx(s.directchatimgreplysmall, s.pullleft)} />
-            <span className={s.directchatreplyname}>{email}</span>
+            <span
+              className={s.directchatreplyname}
+              data-cy="hover__email__container"
+            >
+              {email}
+            </span>
           </div>
         </div>
       </div>

@@ -24,4 +24,20 @@ describe('react-simpleapp-arup', () => {
       .should('contain', 'Complex web apps made easy')
       .and('be.visible');
   });
+
+  it('User able to see human readable date', () => {
+    cy.get('abbr:first-of-type')
+      .parent()
+      .should('contain', 'February 27, 2017')
+      .and('be.visible');
+  });
+
+  it('Should show email on hover', () => {
+    cy.getTestElement('message__container')
+      .first()
+      .trigger('mouseover');
+    cy.getTestElement('hover__email__container')
+      .should('contain', 'abakera@craigslist.org')
+      .and('be.visible');
+  });
 });

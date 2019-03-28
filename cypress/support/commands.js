@@ -23,3 +23,8 @@
 //
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+//
+// getTestElement, just the function here, but it's a Cypress command in our codebase
+Cypress.Commands.add('getTestElement', selector => {
+  return cy.get(`[data-cy="${selector}"]`);
+});
